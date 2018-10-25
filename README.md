@@ -15,12 +15,12 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#9|En tant que développeur, je souhaite révoquer un développeur d'un projet afin de lui refuser l'accès au projet.||1|TODO|7|
 |US#12|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.||1|TODO|8|
 |US#14|En tant que développeur, dans un projet, je souhaite créer et supprimer une User Story(Id, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.||5|TODO|10|
-|US#16|En tant que développeur, je souhaite modifier une une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.||3|TODO|12|
+|US#16|En tant que développeur, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.||3|TODO|12|
 |US#17|En tant que développeur, je souhaite créer et supprimer un Sprint(__date de début__, date de fin, description, __3 colonnes-états : TODO, ONGOING, DONE__) afin d'organiser des listes de tâches.||5|TODO|13|
 |US#18|En tant que développeur, je souhaite visualiser la liste des Sprint d'un projet.||1|TODO|14|
 |US#19|En tant que développeur, je souhaite créer une tâche (__Id__, __description__, __durée__, __tâches dépendantes__, __user stories associées__, __état__, __planification__) afin de l'ajouter à un Sprint.||3|TODO|15|
 |US#20|En tant que développeur, je souhaite visualiser la liste des tâches d'un Sprint.||1|TODO|16|
-|US#22|En tant que développeur, je souhaite m'approprier une tâche (__état de la tâche TODO à ONGOING__, datation du __début de réalisation__, __nom du réalisateur__) afin de la réaliser, .||3|TODO|18|
+|US#22|En tant que développeur, je souhaite m'approprier une tâche (__état de la tâche TODO à ONGOING__, datation du __début de réalisation__, __nom du réalisateur__) afin de la réaliser.||3|TODO|18|
 |US#23|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "reposer" dans le Sprint (__état ONGOING à TODO__) en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés à ces changements__).||5|TODO|19|
 |US#24|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "terminer" dans le Sprint (__état ONGOING à DONE__) en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés__ à ces changements).||2|TODO|20|
 |US#25|En tant que développeur, je souhaite modifier une tâche qui n'a pas encore été réalisée et n'est pas en cours de réalisation afin de la mettre à jour.||3|TODO|21|
