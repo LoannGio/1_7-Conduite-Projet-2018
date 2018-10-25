@@ -3,7 +3,7 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 
 |ID|User Story|Priorité|Difficulté|Etat|Planification|
 |---|---|---|---|---|---|
-|US#1|En tant que visiteur, je souhaite m'inscrire (login, mot de passe, adresse mail) à l'application afin de m'y connecter.|||TODO||
+|US#1|En tant que visiteur, je souhaite m'inscrire (login, mot de passe, adresse mail) à l'application afin de m'y connecter et de m'y enregistrer comme développeur.|||TODO||
 |US#2|En tant que visiteur, je souhaite me connecter (login, mot de passe) afin de commencer à l'utiliser (je deviens alors un développeur).|||TODO||
 |US#3|En tant que développeur, je souhaite créer un projet(Nom, description, génération d'un backlog vide) afin de commencer la gestion de ce projet.|||TODO||
 |US#4|En tant que développeur, je souhaite supprimer un projet afin qu'il ne soit plus disponnible.|||TODO||
