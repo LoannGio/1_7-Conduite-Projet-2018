@@ -10,8 +10,7 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 |US#5|En tant que développeur, je souhaite modifier un projet(nom, description) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées||2|TODO|5|
 |US#6|En tant que développeur, je souhaite inviter d'autres développeurs à un projet afin de leur permettre participer de la gestion de ce projet.||2|TODO|6|
 |US#9|En tant que développeur, je souhaite révoquer un collaborateur d'un projet afin de lui refuser l'accès au projet.||1|TODO|7|
-|US#12|En tant que développeur, je souhaite visualiser la liste des projets auxquels je suis associé afin de les consulter.||1|TODO|8|
-|US#13|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé afin de pouvoir y accéder.||1|TODO|9|
+|US#12|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et lesquels que je suis associé afin de les consulter.||1|TODO|8|
 |US#14|En tant que développeur, dans un projet, je souhaite créer et supprimer une User Story(Id, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.||5|TODO|10|
 |US#16|En tant que développeur, je souhaite modifier une une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.||3|TODO|12|
 |US#17|En tant que développeur, je souhaite créer et supprimer un Sprint(date de début, date de fin, description, 3 colonnes-états : TODO, ONGOING, DONE) afin d'organiser des listes de tâches.||5|TODO|13|
