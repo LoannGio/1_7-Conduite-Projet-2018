@@ -7,7 +7,7 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |ID|User Story|Priorité|Difficulté|Etat|Planification|
 |---|---|---|---|---|---|
 |US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.||3|TODO|1|
-|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à l'utiliser (je deviens alors un développeur).||5|TODO|2|
+|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).||5|TODO|2|
 |US#3|En tant que développeur, je souhaite créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.||1|TODO|3|
 |US#4|En tant que développeur, je souhaite supprimer un projet afin qu'il ne soit plus disponnible.||1|TODO|4|
 |US#5|En tant que développeur, je souhaite modifier un projet(nom, description, durée d'un sprint) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées||2|TODO|5|
