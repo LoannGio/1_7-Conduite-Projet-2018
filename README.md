@@ -9,11 +9,7 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 |US#4|En tant que développeur, je souhaite supprimer un projet afin qu'il ne soit plus disponnible.|||TODO||
 |US#5|En tant que développeur, je souhaite modifier un projet(nom, description) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées|||TODO||
 |US#6|En tant que développeur, je souhaite inviter d'autres développeurs à un projet afin de leur permettre participer de la gestion de ce projet.|||TODO||
-|US#7|En tant que développeur, je souhaite être notifié de l'invitation à un projet afin de pouvoir en prendre connaissance.|||TODO||
-|US#8|En tant que développeur, je souhaite pouvoir accepter une invitation à un projet afin d'en devenir collaborateur.|||TODO||
 |US#9|En tant que développeur, je souhaite révoquer un collaborateur d'un projet afin de lui refuser l'accès au projet.|||TODO||
-|US#10|En tant que développeur, je souhaite pouvoir modifier les droits d'un collaborateur sur le projet afin de le promouvoir au statut de développeur.|||TODO||
-|US#11|En tant que développeur, je souhaite pouvoir modifier les droits d'un collaborateur sur le projet afin de lui retirer son statut de développeur.|||||
 |US#12|En tant que développeur, je souhaite visualiser la liste des projets auxquels je suis associé afin de les consulter.|||TODO||
 |US#13|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé afin de pouvoir y accéder.|||TODO||
 |US#14|En tant que développeur, dans un projet, je souhaite créer une User Story(Id, description, priorité, difficulté, User Stories dépendants, Planification) afin de l'ajouter du Backlog.|||TODO||
