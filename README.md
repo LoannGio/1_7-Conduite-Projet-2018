@@ -8,12 +8,12 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |---|---|---|---|---|---|
 |US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.||3|TODO|1|
 |US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).||5|TODO|2|
-|US#3|En tant que développeur, je souhaite créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.||1|TODO|3|
-|US#4|En tant que développeur, je souhaite supprimer un projet afin qu'il ne soit plus disponnible.||1|TODO|4|
+|US#3|En tant que développeur, je souhaite pouvoir créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.||1|TODO|3|
 |US#5|En tant que développeur, je souhaite modifier un projet(nom, description, durée d'un sprint) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées||2|TODO|5|
+|US#12|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.||1|TODO|8|
+|US#4|En tant que développeur, je souhaite me retirer d'un projet afin qu'il ne soit plus disponnible dans la liste des projet auxquels je suis associés.||1|TODO|4|
 |US#6|En tant que développeur, je souhaite inviter d'autres développeurs à un projet afin de leur permettre participer de la gestion de ce projet.||2|TODO|6|
 |US#9|En tant que développeur, je souhaite révoquer un développeur d'un projet afin de lui refuser l'accès au projet.||1|TODO|7|
-|US#12|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.||1|TODO|8|
 |US#14|En tant que développeur, dans un projet, je souhaite créer et supprimer une User Story(Id, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.||5|TODO|10|
 |US#16|En tant que développeur, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.||3|TODO|12|
 |US#17|En tant que développeur, je souhaite créer et supprimer un Sprint(__date de début__, date de fin, description, __3 colonnes-états : TODO, ONGOING, DONE__) afin d'organiser des listes de tâches.||5|TODO|13|
