@@ -24,4 +24,8 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#16|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "reposer" (__état ONGOING à TODO__) ou la "terminer" (__état ONGOING à DONE__) dans le Sprint en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés à ces changements__).||5|TODO|16|
 |US#17|En tant que développeur, je souhaite modifier ou supprimer une tâche qui n'est ni en cours de réalisation, ni déjà réalisée (__TODO__), afin de la mettre à jour ou bien de la supprimer du Sprint.||3|TODO|17|
 |US#18|En tant que développeur, je souhaite pouvoir générer un graphe de dépendances à partir de la liste des tâches afin de visualiser l'ordre de réalisation des tâches et de proposer une répartition de ces dernières.||13|TODO|18|
+<<<<<<< HEAD
 |US#19|En tant que développeur, je souhaite visualiser le burndown chart (tableau d'avancement des tâches) afin d'avoir un bilan de l'avancement du sprint dans le temps.||8|TODO|19||
+=======
+|US#19|En tant que développeur, je souhaite visualiser un tableau d'avancement des tâches (Burn Down Chart) afin d'avoir un bilan du travail réalisé et du reste à faire.||8|TODO|19||
+>>>>>>> 2d00dd186c4557ee13b6689e95b759aa32c910f6
