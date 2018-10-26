@@ -22,8 +22,6 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#22|En tant que développeur, je souhaite m'approprier une tâche (__état de la tâche TODO à ONGOING__, datation du __début de réalisation__, __nom du réalisateur__) afin de la réaliser.||3|TODO|18|
 |US#23|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "reposer" dans le Sprint (__état ONGOING à TODO__) en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés à ces changements__).||5|TODO|19|
 |US#24|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "terminer" dans le Sprint (__état ONGOING à DONE__) en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés__ à ces changements).||2|TODO|20|
-|US#25|En tant que développeur, je souhaite modifier une tâche qui n'a pas encore été réalisée et n'est pas en cours de réalisation afin de la mettre à jour.||3|TODO|21|
-|US#26|En tant que développeur, je souhaite supprimer une tâche qui n'est ni en cours de réalisation, ni déjà réalisée afin de la supprimer du Sprint.||3|TODO|22|
+|US#25|En tant que développeur, je souhaite modifier ou supprimer une tâche qui n'est ni en cours de réalisation, ni déjà réalisée afin de la mettre à jour ou bien de la supprimer du Sprint.||3|TODO|21|
 |US#27|En tant que développeur, je souhaite pouvoir générer un graphe de dépendances à partir de la liste des tâches afin de visualiser l'ordre de réalisation des tâches et de proposer une répartition de ces dernières.||13|TODO|23|
-|US#28|En tant que développeur, je souhaite pouvoir visualiser un graphe de dépendance lié à une liste des tâches s'il en existe un.||8|TODO|24|
 |US#29|En tant que développeur, je souhaite visualiser un tableau d'avancement des tâches afin d'avoir un bilan du travail réalisé et du reste à faire.||8|TODO|25||
