@@ -12,8 +12,7 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#5|En tant que développeur, je souhaite modifier un projet(nom, description, durée d'un sprint) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées||2|TODO|5|
 |US#12|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.||1|TODO|8|
 |US#4|En tant que développeur, je souhaite me retirer d'un projet afin qu'il ne soit plus disponnible dans la liste des projet auxquels je suis associés.||1|TODO|4|
-|US#6|En tant que développeur, je souhaite inviter d'autres développeurs à un projet afin de leur permettre participer de la gestion de ce projet.||2|TODO|6|
-|US#9|En tant que développeur, je souhaite révoquer un développeur d'un projet afin de lui refuser l'accès au projet.||1|TODO|7|
+|US#6|En tant que développeur, je souhaite inviter ou révoquer un ou plusieurs développeurs à un projet afin de leur permettre de participer ou non à la gestion de ce projet.||2|TODO|6|
 |US#14|En tant que développeur, dans un projet, je souhaite créer et supprimer une User Story(Id, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.||5|TODO|10|
 |US#16|En tant que développeur, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.||3|TODO|12|
 |US#17|En tant que développeur, je souhaite créer et supprimer un Sprint(__date de début__, date de fin, description, __3 colonnes-états : TODO, ONGOING, DONE__) afin d'organiser des listes de tâches.||5|TODO|13|
