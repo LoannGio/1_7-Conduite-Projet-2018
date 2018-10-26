@@ -18,7 +18,7 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO||
 |US#11|En tant que développeur, dans un projet, je souhaite créer et supprimer un Sprint(__date de début__, description) afin d'organiser des listes de tâches.|Haute|2|TODO||
 |US#12|En tant que développeur, je souhaite visualiser la liste des Sprint d'un projet.|Haute|2|TODO||
-|US#13|En tant que développeur, je souhaite créer une tâche (__Id__, __description__, __durée__, __tâches dépendantes__, __user stories associées__, __état:__ 3 possibles TODO, ONGOING, DONE par défaut fixer à TODO, __planification__) afin de l'ajouter à un Sprint.|Haute|1|TODO||
+|US#13|En tant que développeur, je souhaite créer une tâche (__Id__, __description__, __durée__, __tâches dépendantes__, __user stories associées__, __état:__ 3 possibles TODO, ONGOING, DONE par défaut fixer à TODO) afin de l'ajouter à un Sprint.|Haute|1|TODO||
 |US#14|En tant que développeur, je souhaite visualiser la liste des tâches d'un Sprint.|Haute|2|TODO||
 |US#15|En tant que développeur, je souhaite m'approprier une tâche (__état de la tâche TODO à ONGOING__, datation du __début de réalisation__, __nom du réalisateur__) afin de la réaliser.|Haute|3|TODO||
 |US#16|En tant que développeur, lorsque je me suis approrié une tâche, je souhaite la "reposer" (__état ONGOING à TODO__) ou la "terminer" (__état ONGOING à DONE__) dans le Sprint en gardant une trace de cette manipulation (__date des changements d'états__, __développeurs associés à ces changements__).|Haute|5|TODO||
