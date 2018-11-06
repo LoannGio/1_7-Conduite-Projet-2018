@@ -7,19 +7,24 @@ ID d'une tâche : T#[Numéro Sprint].[NuméroTâche][D|I|F] avec :
 * I : tâche d'implémentation
 * F : tâche d'infrastructure
 
+Signification des symboles :
+* \* &nbsp;: Tout, tous
+* \- &nbsp;: Rien, aucun
+
 |ID|Description|Durée|Dépendances|US associées|État|
 |--|-----------|-----|-----------|------------|----|
-|T#1.0F|Implémenter un Dockerfile permettant d'exécuter l'application.|||||
-|T#1.1D|Définir les attributs d'un "Projet".|||||
-|T#1.2D|Définir les attributs d'une "User Story".|||||
-|T#1.3I|Implmenter le fichier "creerProjet.html"|||US#3||
-|T#1.4I|Implmenter le fichier "listeProjets.html"|||US#5||
-|T#1.5I|Implmenter le fichier "modifierProjet.html"|||US#4||
-|T#1.6I|Implmenter le fichier "creerUS.html"|||US#8||
-|T#1.7I|Implmenter le fichier "supprUS.html"|||US#8||
-|T#1.8I|Implmenter le fichier "backlog.html"|||US#9||
-|T#1.9I|Implmenter le fichier "modifierUS.html"|||US#10||
-|T#1.10I|Implmenter le fichier "queries.js"|||||
-|T#1.11I|Implmenter le fichier "server.js"||||||
-
+|T#1.0F|Implémenter un Dockerfile permettant d'exécuter l'application.|1|-|-|DOING|
+|T#1.1D|Définir les attributs d'un "Projet".|0.25|-|-|TODO|
+|T#1.2D|Définir les attributs d'une "User Story".|0.25|-|-|TODO|
+|T#1.3I|Impélmenter le fichier "creerProjet.html"|0.5|T#1.1D|US#3|TODO|
+|T#1.4I|Impélmenter le fichier "listeProjets.html"|0.5|T#1.1D|US#5|TODO|
+|T#1.5I|Impélmenter le fichier "modifierProjet.html"|0.5|T#1.1D|US#4|TODO|
+|T#1.7I|Impélmenter le fichier "supprUS.html"|0.5|T#1.2D|US#8|TODO|
+|T#1.6I|Impélmenter le fichier "creerUS.html"|0.5|T#1.2D|US#8|TODO|
+|T#1.8I|Impélmenter le fichier "backlog.html"|0.5|T#1.2D|US#9|TODO|
+|T#1.9I|Impélmenter le fichier "modifierUS.html"|0.5|T#1.2D|US#10|TODO|
+|T#1.10I|Impélmenter le fichier "queries.js"|1|T#1.1D T#1.2D|-|TODO|
+|T#1.11I|Impélmenter le fichier "server.js"|1.5|T#1.12F|-|TODO|
+|T#1.12F|Mettre en place une architecture client/server NodeJS.|0.5|-|-|DOING|
+|T#1.13F|Construire la release|0.5|*|-|TODO||
 Lien vers la release :
