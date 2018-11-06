@@ -2,6 +2,16 @@
 Projet de Conduite de projet 2018 (groupe 1_7)
 
 ## Tâches du Sprint 1
+??Description??
 
 |ID|Description|Durée|Dépendances|US associées|État|
 |--|-----------|-----|-----------|------------|----|
+
+
+
+
+
+
+
+
+Lien vers la release :
