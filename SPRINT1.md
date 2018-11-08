@@ -13,8 +13,8 @@ Signification des symboles :
 
 |ID|Description|Durée|Dépendances|US associées|État|
 |--|-----------|-----|-----------|------------|----|
-|T#1.0F|Implémenter un Dockerfile permettant d'exécuter l'application.|1|-|-|DOING|
-|T#1.1D|Définir les attributs d'un "Projet".|0.25|-|-|TODO|
+|T#1.0F|Implémenter un Dockerfile permettant d'exécuter l'application.|1|-|-|DONE|
+|T#1.1D|Définir les attributs d'un "Projet".|0.25|-|-|DONE|
 |T#1.2D|Définir les attributs d'une "User Story".|0.25|-|-|TODO|
 |T#1.3I|Impélmenter le fichier "creerProjet.html"|0.5|T#1.1D|US#3|TODO|
 |T#1.4I|Impélmenter le fichier "listeProjets.html"|0.5|T#1.1D|US#5|TODO|
@@ -25,6 +25,6 @@ Signification des symboles :
 |T#1.9I|Impélmenter le fichier "modifierUS.html"|0.5|T#1.2D|US#10|TODO|
 |T#1.10I|Impélmenter le fichier "queries.js"|1|T#1.1D T#1.2D|-|TODO|
 |T#1.11I|Impélmenter le fichier "server.js"|1.5|T#1.12F|-|TODO|
-|T#1.12F|Mettre en place une architecture client/server NodeJS.|0.5|-|-|DOING|
+|T#1.12F|Mettre en place une architecture client/server NodeJS.|0.5|-|-|DONE|
 |T#1.13F|Construire la release|0.5|*|-|TODO||
 Lien vers la release :
