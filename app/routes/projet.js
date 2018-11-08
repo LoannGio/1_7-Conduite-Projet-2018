@@ -13,8 +13,8 @@ const config = {
 //let db = firebase.initializeApp(config).database(); //sans doute faux
 
 /* GET home page. */
-router.get('/liste', function(req, res, next) {
-  res.send("");
+router.get('/', function(req, res, next) {
+  res.render('projet', { title: 'Project List' });
 });
 
 module.exports = router;
