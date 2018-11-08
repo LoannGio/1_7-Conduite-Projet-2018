@@ -10,7 +10,7 @@ const config = {
   storageBucket: "conduiteprojet2018-ubx.appspot.com",
   messagingSenderId: "597745430634"
 };
-let db = firebase.initializeApp(config);
+//let db = firebase.initializeApp(config).database(); //sans doute faux
 
 /* GET home page. */
 router.get('/liste', function(req, res, next) {
