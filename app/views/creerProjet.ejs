@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form id="createForm">
+      <p>Nom : <input id="projectName" type="text" name="projectName" required/></p>
+      <span>Description : <span/>
+      <textarea id="projectDescr" placeholder="Description" name="projectDescr" rows="3" cols="40" ></textarea>
+      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" type="number" min="1" name="projectSprintDur" style="width:45px;" required/></p>
+      <input type="submit" name="submitter" value="Send">
+    </form>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+const createForm = document.querySelector("#createForm");
+const createURL = "http://localhost:3000/projet/creer";
+
+createForm.addEventListener('submit', handleCreateSubmit);
+
+function handleCreateSubmit(){
+  let projectName = $('#projectName').val();
+  let projectDescr = $('#projectDescr').val();
+  let projectSprintDur = $('#projectSprintDur').val();
+
+  let project = {
+    name: projectName,
+    description: projectDescr,
+    sprintDur: projectSprintDur
+  };
+
+  fetch(createURL, {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body:JSON.stringify(project)
+  });
+
+
+  /*$.ajax({
+    url: createURL,
+    type: 'POST',
+    contentType: 'text/json',
+    data: project,
+    dataType: "jsonp",
+    success: function (data) {
+      console.log("Insert success");
+    },
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      console.log("Insert error");
+    }
+  });*/
+}
+
+</script>

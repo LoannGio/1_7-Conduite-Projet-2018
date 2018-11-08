@@ -16,8 +16,8 @@ Signification des symboles :
 |T#1.0F|Implémenter un Dockerfile permettant d'exécuter l'application.|1|-|-|DONE|
 |T#1.1D|Définir les attributs d'un "Projet".|0.25|-|-|DONE|
 |T#1.2D|Définir les attributs d'une "User Story".|0.25|-|-|TODO|
-|T#1.3I|Impélmenter le fichier "creerProjet.html"|0.5|T#1.1D|US#3|TODO|
-|T#1.4I|Impélmenter le fichier "listeProjets.html"|0.5|T#1.1D|US#5|TODO|
+|T#1.3I|Impélmenter le fichier "creerProjet.html"|0.5|T#1.1D|US#3|DOING|
+|T#1.4I|Impélmenter le fichier "listeProjets.html"|0.5|T#1.1D|US#5|DOING|
 |T#1.5I|Impélmenter le fichier "modifierProjet.html"|0.5|T#1.1D|US#4|TODO|
 |T#1.7I|Impélmenter le fichier "supprUS.html"|0.5|T#1.2D|US#8|TODO|
 |T#1.6I|Impélmenter le fichier "creerUS.html"|0.5|T#1.2D|US#8|TODO|
