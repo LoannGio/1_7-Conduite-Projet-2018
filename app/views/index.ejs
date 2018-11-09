@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  </head>
+  <%- include('partials/head.ejs', {title: title}); %>
   <body>
-    <header>
-         <!-- Fixed navbar -->
-         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-           <a class="navbar-brand" href="#"><%= title %></a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarCollapse">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-             </ul>
-             <form class="form-inline mt-2 mt-md-0">
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-             </form>
-           </div>
-         </nav>
-       </header>
-
+    <%- include('partials/navbar.ejs', {title: title}); %>
 
        <!-- Begin page content -->
        <main role="main" class="container">
          <h1 class="mt-5">Welcome to our manager!</h1>
+<<<<<<< HEAD
          <p><a class="btn btn-primary" href="#" role="button">New Project</a></p>
 
        </main>
@@ -63,5 +37,12 @@
        };
        firebase.initializeApp(config);
   </script>
+=======
+         <p><a class="btn btn-primary" href="/projet/creer" role="button">New Project</a></p>
+       </main>
+
+   <% include partials/footer %>
+   <% include partials/scripts %>
+>>>>>>> db40ac4a595fca7d9594f6dee3bdfdf77576bdf7
   </body>
 </html>
