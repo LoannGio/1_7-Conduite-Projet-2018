@@ -8,11 +8,11 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 
 |ID|User Story|Priorité|Difficulté|Etat|Planification|
 |---|---|---|---|---|---|
-|US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.|Moyenne|3|TODO|Sprint 2|
-|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).|Moyenne|8|TODO|Sprint 2|
-|US#3|En tant que développeur, je souhaite pouvoir créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.|Haute|1|DOING|Sprint 1|
+|US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.|Moyenne|3|TODO|Sprint 1|
+|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).|Moyenne|8|TODO|Sprint 1|
+|US#3|En tant que développeur, je souhaite pouvoir créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.|Haute|1|TODO|Sprint 1|
 |US#4|En tant que développeur, je souhaite modifier un projet(nom, description, durée d'un sprint) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées|Haute|3|TODO|Sprint 1|
-|US#5|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.|Haute|2|DOING|Sprint 1|
+|US#5|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.|Haute|2|TODO|Sprint 1|
 |US#6|En tant que développeur, je souhaite me retirer d'un projet afin qu'il ne soit plus disponible dans la liste des projet auxquels je suis associés.|Moyenne|2|TODO|Sprint 3|
 |US#7|En tant que développeur, je souhaite inviter ou révoquer un ou plusieurs développeurs à un projet afin de leur permettre de participer ou non à la gestion de ce projet.|Moyenne|3|TODO|Sprint 3|
 |US#8|En tant que développeur, dans un projet, je souhaite créer ou supprimer une User Story(__Id__, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.|Haute|2|TODO|Sprint 1|
