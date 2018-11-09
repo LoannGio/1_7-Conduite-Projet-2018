@@ -11,15 +11,59 @@
 
   </head>
   <body>
-    <h1><%= title %></h1>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">Project Manager</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/projet/creer">Create Project</a>
+              <a class="dropdown-item" href="/projet">Projet List</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <a class="btn btn-outline-success my-2 my-sm-0" href="/login" role="button">Login</a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+   <main role="main" class="container">
+    <h1 class="mt-5"><%= title %></h1>
 
     <form id="createForm">
-      <p>Nom : <input id="projectName" type="text" name="projectName" required/></p>
+      <p>Nom : <input id="projectName" class="form-control" type="text" name="projectName"  style="width:600px;" required/></p>
       <span>Description : <span/>
-      <textarea id="projectDescr" placeholder="Description" name="projectDescr" rows="3" cols="40" ></textarea>
-      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" type="number" min="1" name="projectSprintDur" style="width:45px;" required/></p>
-      <input type="submit" name="submitter" value="Send">
+      <textarea class="form-control" id="projectDescr" placeholder="Description" name="projectDescr" rows="3" style="width:600px;" ></textarea>
+
+      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" class="form-control" type="number" min="1" name="projectSprintDur" style="width:70px;" required/></p>
+      <input class="btn btn-primary" type="submit" name="submitter" value="Send">
+
     </form>
+  </main>
+
+<footer class="footer">
+    <div class="container">
+      <span class="text-muted"></span>
+    </div>
+</footer>
+
+
+
+    <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>
