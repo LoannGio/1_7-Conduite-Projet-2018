@@ -32,3 +32,9 @@ exports.getProjectById = function(id) {
     console.log("The read failed: " + errorObject.code);
   });
 }
+
+
+// Delete project by id
+exports.deleteProjectById = function(id) {
+  db.getFirebase().database().ref('projects/' + id).remove();
+}
