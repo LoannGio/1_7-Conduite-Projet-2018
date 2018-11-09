@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
-
 const firebase = require('firebase');
+var logger = require('morgan');
+
+
 const config = {
   apiKey: "AIzaSyC-0azPBpoSpT1AfPI85FTDT-vb0Q3CDlY",
   authDomain: "conduiteprojet2018-ubx.firebaseapp.com",
@@ -22,7 +24,10 @@ router.get('/creer', function(req, res, next) {
 });
 
 router.post('/creer', function(req, res, next) {
-  //Comment check si on arrive bien ici ? avec les bonnes données ?
+  let projectName = req.body.name;
+  let projectDescr = req.body.description;
+  let projectSprintDur = req.body.sprintDur;
+  console.log(projectName + " " + projectDescr + " " + projectSprintDur);
 });
 
 module.exports = router;
