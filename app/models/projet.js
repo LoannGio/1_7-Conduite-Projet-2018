@@ -19,7 +19,6 @@ async function nextId(){
 exports.createProject = async function(projectName, descr, sprintDur) {
   let pRef = db.getFirebase().database().ref('projects/');
   let id = await nextId();
-  console.log('\n' + id + '\n');
   pRef.push ({
     name: projectName,
     description:descr,
@@ -32,21 +31,34 @@ exports.createProject = async function(projectName, descr, sprintDur) {
 
 
 // Get projects
-exports.getProjects = function() {
+exports.getProjects = async function() {
   let pRef = db.getFirebase().database().ref('projects/');
   // Attach an asynchronous callback to read the data at our posts reference
-  pRef.on("value", function(snapshot) {
+  return await pRef.once("value", function(snapshot) {
     return snapshot.val();
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code);
+  }).then((snapshot)=> {
+    return snapshot.val();
+  }).then((data)=>{
+    return toArray(data);
   });
 }
 
+
+function toArray(items) {
+  return Object.keys(items).reduce((array, key) => {
+    const value = items[key];
+    array.push({key, value});
+    return array;
+  }, []).sort();
+}
+
 // Get project by id
-exports.getProjectById = function(id) {
+exports.getProjectById = async function(id) {
   let pRef = db.getFirebase().database().ref('projects/');
   // Attach an asynchronous callback to read the data at our posts reference
-  pRef.orderByChild("uid").equalTo(id).on("value", function(snapshot) {
+  await pRef.orderByChild("uid").equalTo(id).on("value", function(snapshot) {
     return snapshot.val()[0];
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code);
