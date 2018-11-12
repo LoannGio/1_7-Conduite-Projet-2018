@@ -11,7 +11,7 @@ Correspond à la fin du Sprint 1.
 
 Dans cette version, l'application présente :
 * Une page d'accueil
-* Page login avec possibilité de login (route : /login)
+* Page login avec possibilité de login (route : /login). Exemple avec login: toto@gmail.com & mdp:toto123456
 * Page de création de compte (non fonctionnelle) (route : /login/create)
 * Page de création d'un projet (route : /projet/creer)
 * Page de listage de tous les projets (route : /projet/liste)
