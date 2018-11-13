@@ -63,6 +63,20 @@ exports.getProjectById = async function(id) {
   return project;
 }
 
+// Update project by id
+exports.updateProjectById = async function(id, name, descr, sprintDur){
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
+  });
+  const db = client.db(DBinfos.BDname);
+  const filter = { uid: parseInt(id)};
+  db.collection(DBinfos.projectsCol).updateOne(filter, {$set: {name:name, description:descr, sprintDur:sprintDur}}, function(err, re){
+    if (err) throw err;
+    console.log('done');
+    client.close();
+  });
+}
+
 // Delete project by id
 exports.deleteProjectById = async function(id) {
   const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {

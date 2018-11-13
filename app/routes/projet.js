@@ -22,4 +22,18 @@ router.post('/creer', function(req, res, next) {
   let uid = dbUtils.createProject(projectName, projectDescr, projectSprintDur);
 });
 
+router.get('/edit/:id', async function(req, res, next){
+  let uid = req.params.id;
+  let project = await dbUtils.getProjectById(parseInt(uid));
+  res.render('modifierProjet', {title:'Editer projet : '+project.name, project:project});
+});
+
+router.put('/edit/:id', async function(req, res, next){
+  let projectUid = req.params.id;
+  let projectName = req.body.name;
+  let projectDescr = req.body.description;
+  let projectSprintDur = req.body.sprintDur;
+  await dbUtils.updateProjectById(projectUid, projectName, projectDescr, projectSprintDur);
+});
+
 module.exports = router;

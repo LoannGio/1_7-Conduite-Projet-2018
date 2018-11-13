@@ -38,6 +38,7 @@ En gras les attributs obligatoires.
 ### Routes
 * /projet/creer : créer un projet
 * /projet/liste : lister les projets
+* /projet/edit/{id} : modifier un projet
 * /login/create : inscription
 * /login : connexion
 * / : accueil
