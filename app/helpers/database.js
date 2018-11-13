@@ -1,19 +1,17 @@
-let firebase = require('firebase');
+const DABASE_NAME = 'conduiteprojet2018';
+const usersCol  = 'users';
+const projectsCol = 'projets';
+const IDsCol = 'IDs';
+const MONGO_URL = 'mongodb://user:sampleuser1@ds261253.mlab.com:61253/conduiteprojet2018';
+const MongoClient = require('mongodb').MongoClient;
 
-exports.getFirebase = function() {
+let utils = {
+  DBname: DABASE_NAME,
+  usersCol: usersCol,
+  projectsCol: projectsCol,
+  IDsCol: IDsCol,
+  DBurl: MONGO_URL,
+  MongoClient: MongoClient
+};
 
-  if (!firebase.apps.length) {
-    const config = {
-      apiKey: "AIzaSyC-0azPBpoSpT1AfPI85FTDT-vb0Q3CDlY",
-      authDomain: "conduiteprojet2018-ubx.firebaseapp.com",
-      databaseURL: "https://conduiteprojet2018-ubx.firebaseio.com",
-      projectId: "conduiteprojet2018-ubx",
-      storageBucket: "conduiteprojet2018-ubx.appspot.com",
-      messagingSenderId: "597745430634"
-    };
-
-    firebase.initializeApp(config);
-    return firebase;
-  }
-  return firebase;
-}
+module.exports = utils;

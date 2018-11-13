@@ -1,72 +1,75 @@
-let db = require('../helpers/database.js');
+let DBinfos = require('../helpers/database.js');
 const logger = require('morgan');
 
 async function nextId(){
-  let ref = db.getFirebase().database().ref('UID_MAX_PROJECT/');
-  let nextid = -1;
-  await ref.transaction(function(id){
-    return id+1;
-  }, function(error, committed, child) {
-     if(error) {
-        console.log('error: ', error);
-     }
-     nextid = child.node_.value_;
-   });
-   return nextid
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
+  });
+  const db = client.db(DBinfos.DBname);
+  let idMax = -1;
+  let filter = { name:'idMaxProjects'};
+  let dbResp = await db.collection(DBinfos.IDsCol).findOne(filter);
+  idMax = dbResp.value;
+  let nextId = parseInt(idMax) + 1;
+  db.collection(DBinfos.IDsCol).updateOne(filter, {$set: {value:nextId}}, function(err, re){
+    if (err) throw err;
+    client.close();
+  });
+  return nextId;
 }
 
 // Create new projet in firebase
 exports.createProject = async function(projectName, descr, sprintDur) {
-  let pRef = db.getFirebase().database().ref('projects/');
-  let id = await nextId();
-  pRef.push ({
-    name: projectName,
-    description:descr,
-    sprintDuration:sprintDur,
-    uid:id
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
   });
-  return id;
+  const db = client.db(DBinfos.DBname);
+  let project = {
+    name: projectName,
+    description: descr,
+    sprintDur: sprintDur,
+    uid: await nextId()
+  };
+
+  db.collection(DBinfos.projectsCol).insertOne(project, function(err, res){
+    if (err) throw err;
+    client.close();
+  });
+  return project.uid;
 }
 
 
 
 // Get projects
 exports.getProjects = async function() {
-  let pRef = db.getFirebase().database().ref('projects/');
-  // Attach an asynchronous callback to read the data at our posts reference
-  return await pRef.once("value", function(snapshot) {
-    return snapshot.val();
-  }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
-  }).then((snapshot)=> {
-    return snapshot.val();
-  }).then((data)=>{
-    return toArray(data);
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
   });
-}
-
-
-function toArray(items) {
-  return Object.keys(items).reduce((array, key) => {
-    const value = items[key];
-    array.push({key, value});
-    return array;
-  }, []).sort();
+  const db = client.db(DBinfos.BDname);
+  const projects = await db.collection(DBinfos.projectsCol).find({}).toArray();
+  client.close();
+  return projects;
 }
 
 // Get project by id
 exports.getProjectById = async function(id) {
-  let pRef = db.getFirebase().database().ref('projects/');
-  // Attach an asynchronous callback to read the data at our posts reference
-  await pRef.orderByChild("uid").equalTo(id).on("value", function(snapshot) {
-    return snapshot.val()[0];
-  }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
   });
+  const db = client.db(DBinfos.BDname);
+  const filter = { uid: id};
+  const project = await db.collection(DBinfos.projectsCol).findOne(filter);
+  client.close();
+  return project;
 }
 
-
 // Delete project by id
-exports.deleteProjectById = function(id) {
-  db.getFirebase().database().ref('projects/' + id).remove();
+exports.deleteProjectById = async function(id) {
+  const client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
+      useNewUrlParser: true
+  });
+  const db = client.db(DBinfos.BDname);
+  const filter = { uid: id};
+  db.collection(DBinfos.projectsCol).deleteOne(filter);
+  client.close();
 }

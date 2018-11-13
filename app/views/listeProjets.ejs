@@ -54,11 +54,11 @@
       </thead>
       <tbody>
 
-        <% projects.forEach(function(value, key) { %>
+        <% projects.forEach(function(projet) { %>
             <tr>
-            <th scope="row"><%= projects[key].value.uid%></th>
-            <th scope="row"><%= projects[key].value.name%></th>
-            <th scope="row"><%= projects[key].value.description%></th>
+            <th scope="row"><%= projet.uid%></th>
+            <th scope="row"><%= projet.name%></th>
+            <th scope="row"><%= projet.description%></th>
           </tr>
         <% }); %>
       </tbody>
