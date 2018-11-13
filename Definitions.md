@@ -12,12 +12,23 @@ En gras les attributs obligatoires.
 * __Nom__ : String
 * Description : String
 * __Durée d'un sprint__ : entier (nombre de jours)
+* Backlog : Liste de User Story, vide à la création
+* Utilisateurs : Liste des Utilisateur associé
+* Sprints : Liste des sprints du projets, vide à la création
 
 ### User Story
-
+* __id__ : entier unique
+* description : String
+* priorité : String parmi {"Haute", "Moyenne", "Faille"}, défaut "Failbe"
+* difficulté : entier, defaut 0
+* Etat : String parmi {"TODO", "DONE"}, défaut "DONE"
+* Planification : entier
 
 ### Utilisateur
-
+* __username__ : nom utilisateur
+* __email__ : un email unique propre à l'utilisateur
+* __password__ : mot de passe, 6-12 caractères
+* projects : liste des id des projets associé à l'utilisateur, vide à la création
 
 ### Sprint
 (pas sur que celui la soit utile. A-t-on un objet "Sprint" a stocker dans la BD ?)
