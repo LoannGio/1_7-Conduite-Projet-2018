@@ -29,3 +29,4 @@ En gras les attributs obligatoires.
 * /projet/liste : lister les projets
 * /login/create : inscription
 * /login : connexion
+* / : accueil
