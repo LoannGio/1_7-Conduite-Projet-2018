@@ -13,12 +13,19 @@ En gras les attributs obligatoires.
 * Description : String
 * __Durée d'un sprint__ : entier (nombre de jours)
 
-### T#1.2D - User Story
+### User Story
 
 
 ### Utilisateur
+
 
 ### Sprint
 (pas sur que celui la soit utile. A-t-on un objet "Sprint" a stocker dans la BD ?)
 
 ### Tâche
+
+### Routes
+* /projet/creer : créer un projet
+* /projet/liste : lister les projets
+* /login/create : inscription
+* /login : connexion
