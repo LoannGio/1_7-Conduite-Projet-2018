@@ -24,7 +24,7 @@ En gras les attributs obligatoires.
 * Etat : String parmi {"TODO", "DONE"}, défaut "DONE"
 * Planification : entier
 
-### Utilisateur
+### Développeur (utilisateur inscrit)
 * __username__ : nom utilisateur
 * __email__ : un email unique propre à l'utilisateur
 * __password__ : mot de passe, 6-12 caractères
