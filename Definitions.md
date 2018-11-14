@@ -25,13 +25,19 @@ En gras les attributs obligatoires.
 * Planification : entier
 
 ### Développeur (utilisateur inscrit)
+* __id__ : entier unique
 * __username__ : nom utilisateur
 * __email__ : un email unique propre à l'utilisateur
 * __password__ : mot de passe, 6-12 caractères
 * projects : liste des id des projets associé à l'utilisateur, vide à la création
 
 ### Sprint
-(pas sur que celui la soit utile. A-t-on un objet "Sprint" a stocker dans la BD ?)
+* __id__ : entier unique
+* __Nom__ : nom du sprint
+* __dateDebut__ : date de début du sprint
+* description : description du sprint
+* releaseURL : lien vers la release du sprint
+* UserStoriesLinked : User Stories traîtées dans le sprint
 
 ### Tâche
 
