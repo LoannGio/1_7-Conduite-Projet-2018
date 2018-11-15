@@ -44,12 +44,16 @@ Les User stories traîtées dans le Sprint 2 sont visibles dans le fichier SPRIN
 |T#2.25T|Implémentation de test(s) unitaire(s) ciblant les routes de gestion des sprints (création, suppression, liaison avec une ou des user story(ies)).|1|T#2.2D, T#2.3D, T#2.4D, T#2.16I, T#2.18I, T#2.20I|US#11, US#12|TODO|
 |T#2.26T|Implémentation de test(s) unitaire(s) ciblant les requêtes envoyées par les fichiers .ejs à leur fichier de traitement. (méthodes POST, PUT, DELETE)|0.5|T#2.4D, T#2.5I, T#2.7I, T#2.9I, T#2.11I, T#2.15I, T#2.17I, T#2.19I|-|TODO|
 |T#2.27T|Implémentation de test(s) unitaire(s) ciblant les callbacks des fichiers de traitement des requêtes vers les fichiers .ejs|0.5|T#2.4D, T#2.6I, T#2.8I T#2.10I, T#2.12I, T#2.14I, T#2.16I, T#2.18I, T#2.20I|-|TODO|
-|T#2.22E|Ecriture du test de validation de US#2.|||||
-|T#2.22E|Ecriture du test de validation de US#4.|||||
-|T#2.22E|Ecriture du test de validation de US#8.|||||
-|T#2.22E|Ecriture du test de validation de US#9.|||||
-|T#2.22E|Ecriture du test de validation de US#11.|||||
-|T#2.22E|Ecriture du test de validation de US#12.||||||
-
-
-|T#2.F|Construire la release|0.5|*|-|TODO||
+|T#2.28E|Ecriture du test de validation de US#2.|0.1|-|US#2|TODO|
+|T#2.29E|Ecriture du test de validation de US#4.|0.1|-|US#4|TODO|
+|T#2.30E|Ecriture du test de validation de US#8.|0.1|-|US#8|TODO|
+|T#2.31E|Ecriture du test de validation de US#9.|0.1|-|US#9|TODO|
+|T#2.32E|Ecriture du test de validation de US#11.|0.1|-|US#11|TODO|
+|T#2.33E|Ecriture du test de validation de US#12.|0.1|-|US#12|TODO|
+|T#2.34T|Réaliser le test de validation de US#2.|0.25|T#2.28E, T#2.5I, T#2.6I|US#2|TODO|
+|T#2.35T|Réaliser le test de validation de US#4.|0.25|T#2.29E, T#2.7I, T#2.8I|US#4|TODO|
+|T#2.36T|Réaliser le test de validation de US#8.|0.25|T#2.30E, T#2.9I, T#2.10I, T#2.11I, T#2.12I|US#8|TODO|
+|T#2.37T|Réaliser le test de validation de US#9.|0.25|T#2.31E, T#2.13I, T#2.14I|US#9|TODO|
+|T#2.38T|Réaliser le test de validation de US#11.|0.25|T#2.32E, T#2.15I, T#2.16I, T#2.17I, T#2.18I|US#11|TODO|
+|T#2.39T|Réaliser le test de validation de US#12.|0.25|T#2.33E, T#2.19I, T#2.20I|US#12|TODO|
+|T#2.40F|Construire la release|0.5|*|-|TODO||
