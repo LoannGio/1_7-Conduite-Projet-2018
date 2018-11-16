@@ -19,7 +19,7 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#9|En tant que développeur, dans un projet, je souhaite visualiser le Backlog (liste des User Story).|Haute|2|TODO|Sprint 2|
 |US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO|Sprint 3|
 |US#11|En tant que développeur, dans un projet, je souhaite créer et supprimer un Sprint(__date de début__, description, lien vers release) afin d'organiser des listes de tâches.|Haute|2|TODO|Sprint 2|
-|US#12|En tant que développeur, dans un projet, je souhaite lier une User Story à un Sprint et visualiser les User Stories liées à un Sprint afin d'organiser des listes de tâches.|Haute|3|TODO|Sprint 2|
+|US#12|En tant que développeur, dans un projet, je souhaite lier ou enlever une User Story à un Sprint et visualiser les User Stories liées à un Sprint afin d'organiser des listes de tâches.|Haute|3|TODO|Sprint 2|
 |US#13|En tant que développeur, je souhaite visualiser la liste des Sprint d'un projet.|Haute|2|TODO|Sprint 3|
 |US#14|En tant que développeur, je souhaite créer une tâche (__Id__, __description__, __durée__, __tâches dépendantes__, __user stories associées__, __état:__ 3 possibles TODO, ONGOING, DONE par défaut fixer à TODO) afin de l'ajouter à un Sprint.|Haute|1|TODO|Sprint 3|
 |US#15|En tant que développeur, je souhaite visualiser la liste des tâches d'un Sprint.|Haute|2|TODO|Sprint 3|
