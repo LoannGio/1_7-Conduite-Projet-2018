@@ -8,17 +8,19 @@ router.get('/', function(req, res, next) {
   res.render('authentication/login', { title: 'Login Page' });
 });
 
-router.post('/verification', function(req, res, next) {
+router.post('/', async function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
   };
-  if (!dbUtils.existUser(user)) {
-    console.log('Connexion impossible pour, ' + email + '\nUtilisateur ou mot de passe incorrect');
-    res.send('Connexion impossible pour, ' + email + '\nUtilisateur ou mot de passe incorrect');
+  var isConnected = await dbUtils.connectUser(user);
+  if (isConnected) {
+    console.log('Welcome ' + user.email );
+    res.redirect(req.baseUrl + '/');
   }
-  console.log('Welcome ' + email );
-  res.send('Welcome ' + email );
+  else {
+    console.log('Connexion impossible pour, ' + user.email + '\nUtilisateur ou mot de passe incorrect');
+  }
 });
 
 /* GET login page. */
@@ -26,14 +28,19 @@ router.get('/creer', function(req, res, next) {
   res.render('authentication/createAccount', { title: 'Create Account' });
 });
 
-router.post('/creer', function(req, res, next) {
+router.post('/creer', async function(req, res) {
   let user = {
     email: req.body.email,
+    password:  req.body.password,
+    name: req.body.name,
   };
-  if (!dbUtils.existUser(user)) {
-    res.send("L'email: " + email + " est déjà associé à un utilisateur" );
+  let isCreated = await dbUtils.createUser(user);
+  if (isCreated) {
+    console.log('Welcome ' + user.email );
   }
-  res.send('Welcome ' + email );
+  else {
+    console.log("L'email: " + user.email + " est déjà associé à un utilisateur" );
+  }
 });
 
 module.exports = router;

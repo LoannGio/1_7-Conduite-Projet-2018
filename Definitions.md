@@ -45,6 +45,6 @@ En gras les attributs obligatoires.
 * /projet/creer : créer un projet
 * /projet/liste : lister les projets
 * /projet/edit/{id} : modifier un projet
-* /login/create : inscription
+* /login/creer : inscription
 * /login : connexion
 * / : accueil
