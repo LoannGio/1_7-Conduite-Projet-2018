@@ -17,9 +17,9 @@ Les User stories traîtées dans le Sprint 2 sont visibles dans le fichier SPRIN
 
 |ID|Description|Durée|Dépendances|US associées|État|
 |--|-----------|-----|-----------|------------|----|
-|T#2.1D|Définir ce qu'est un "Développeur".|0.25|-|-|DONE|
-|T#2.2D|Définir ce qu'est une "User Story".|0.25|-|-|DONE|
-|T#2.3D|Définir ce qu'est une "Sprint".|0.25|-|-|TODO|
+|T#2.1D|Définir ce qu'est un "Développeur" (utilisateur connecté à notre application et objet de notre BD, il faut définir ses attributs (obligatoires et facultatifs), ses rôles et ses droits).|0.25|-|-|DONE|
+|T#2.2D|Définir ce qu'est une "User Story" (objet de notre BD, il faut définir ses attributs(obligatoires et facultatifs)).|0.25|-|-|DONE|
+|T#2.3D|Définir ce qu'est une "Sprint" (objet de notre BD, il faut définir ses attributs(obligatoires et facultatifs))..|0.25|-|-|TODO|
 |T#2.4D|Définir les routes et les fichiers qui vont permettre la gestion des utilisateurs, user stories, sprints, projets.|0.25|-|-|DONE|
 |T#2.5I|Implémenter le fichier "login.ejs", page HTML côté client permettant de se connecter. (formulaire demandant de renseigner obligatoirement les informations permettant d'identifier un développeur (cf. T#2.1D). Sur la validation, envoie les données saisies au fichier de traitement de la route correspondante en méthode POST)|0.5|T#2.1D, T#2.4D|US#2|TODO|
 |T#2.6I|Dans le fichier serveur gérant les routes correspondant à la gestion d'un utilisateur (cf. T#2.4D), implémenter les fonctions permettant d'afficher le fichier "login.ejs" à un utilisateur et de gérer le POST de ce même fichier (authentification).|1|T#2.1D, T#2.4D|US#2|TODO|
