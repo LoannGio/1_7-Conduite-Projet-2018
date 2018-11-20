@@ -16,7 +16,7 @@ En gras les attributs obligatoires.
 * Utilisateurs : Liste des Utilisateur associé
 * Sprints : Liste des sprints du projets, vide à la création
 
-### User Story
+### T#2.2D - User Story
 * __id__ : entier unique
 * description : String
 * priorité : String parmi {"Haute", "Moyenne", "Faille"}, défaut "Failbe"
@@ -24,14 +24,14 @@ En gras les attributs obligatoires.
 * Etat : String parmi {"TODO", "DONE"}, défaut "DONE"
 * Planification : entier
 
-### Développeur (utilisateur inscrit)
+### T#2.1D - Développeur (utilisateur inscrit)
 * __id__ : entier unique
 * __username__ : nom utilisateur
 * __email__ : un email unique propre à l'utilisateur
 * __password__ : mot de passe, 6-12 caractères
 * projects : liste des id des projets associé à l'utilisateur, vide à la création
 
-### Sprint
+### T#2.3D - Sprint
 * __id__ : entier unique
 * __Nom__ : nom du sprint
 * __dateDebut__ : date de début du sprint
@@ -41,7 +41,7 @@ En gras les attributs obligatoires.
 
 ### Tâche
 
-### Routes
+### T#2.4D - Routes
 * /projet/creer : créer un projet
 * /projet/liste : lister les projets
 * /projet/edit/{id} : modifier un projet
