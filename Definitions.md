@@ -7,6 +7,9 @@ Définitions en tout genre, chaque fois que l'on se met d'accord sur quelque cho
 
 En gras les attributs obligatoires.
 
+### Définition of Done
+Une tâche est considérée finie lorsque sa réalisation correspond à sa description. Les tests ne sont pas compris dans la DoD d'une tâche : il existe des tâches spécifiques pour eux.
+
 ### T#1.1D - Projet
 * __id__ : entier unique
 * __Nom__ : String
