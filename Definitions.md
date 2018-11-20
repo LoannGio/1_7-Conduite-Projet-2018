@@ -19,7 +19,7 @@ En gras les attributs obligatoires.
 ### T#2.2D - User Story
 * __id__ : entier unique
 * description : String
-* priorité : String parmi {"Haute", "Moyenne", "Faille"}, défaut "Failbe"
+* priorité : String parmi {"Haute", "Moyenne", "Faible"}, défaut "Failbe"
 * difficulté : entier, defaut 0
 * Etat : String parmi {"TODO", "DONE"}, défaut "DONE"
 * Planification : entier
@@ -45,6 +45,6 @@ En gras les attributs obligatoires.
 * /projet/creer : créer un projet
 * /projet/liste : lister les projets
 * /projet/edit/{id} : modifier un projet
-* /login/create : inscription
+* /login/creer : inscription
 * /login : connexion
 * / : accueil

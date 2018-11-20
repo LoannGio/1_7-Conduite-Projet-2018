@@ -8,8 +8,8 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 
 |ID|User Story|Priorité|Difficulté|Etat|Planification|
 |---|---|---|---|---|---|
-|US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.|Moyenne|3|DONE|Sprint 1|
-|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).|Moyenne|5|TODO|Sprint 2|
+|US#1|En tant que visiteur, je souhaite m'inscrire (__login__, __mot de passe__, __adresse mail__) à l'application afin de m'y connecter.|Moyenne|3|TODO|Sprint 1|
+|US#2|En tant que visiteur, je souhaite me connecter (__login__, __mot de passe__) afin de commencer à utiliser l'application (je deviens alors un développeur).|Moyenne|5|DONE|Sprint 2|
 |US#3|En tant que développeur, je souhaite pouvoir créer un projet(__Nom__, description, __génération d'un backlog vide__, __durée d'un Sprint__) afin de commencer la gestion de ce projet.|Haute|1|DONE|Sprint 1|
 |US#4|En tant que développeur, je souhaite modifier un projet(nom, description, durée d'un sprint) ou le réinitialiser afin de mettre à jour les informations qui lui sont associées|Haute|3|TODO|Sprint 2|
 |US#5|En tant que développeur, je souhaite visualiser la liste des projets que j'ai créé et auxquels je suis associé afin de les consulter.|Haute|2|DONE|Sprint 1|
@@ -19,7 +19,7 @@ Dans ce tableau, en gras figurent les attributs __obligatoires__.
 |US#9|En tant que développeur, dans un projet, je souhaite visualiser le Backlog (liste des User Story).|Haute|2|TODO|Sprint 2|
 |US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO|Sprint 3|
 |US#11|En tant que développeur, dans un projet, je souhaite créer et supprimer un Sprint(__date de début__, description, lien vers release) afin d'organiser des listes de tâches.|Haute|2|TODO|Sprint 2|
-|US#12|En tant que développeur, dans un projet, je souhaite lier une User Story à un Sprint et visualiser les User Stories liées à un Sprint afin d'organiser des listes de tâches.|Haute|3|TODO|Sprint 2|
+|US#12|En tant que développeur, dans un projet, je souhaite lier ou enlever une User Story à un Sprint et visualiser les User Stories liées à un Sprint afin d'organiser des listes de tâches.|Haute|3|TODO|Sprint 2|
 |US#13|En tant que développeur, je souhaite visualiser la liste des Sprint d'un projet.|Haute|2|TODO|Sprint 3|
 |US#14|En tant que développeur, je souhaite créer une tâche (__Id__, __description__, __durée__, __tâches dépendantes__, __user stories associées__, __état:__ 3 possibles TODO, ONGOING, DONE par défaut fixer à TODO) afin de l'ajouter à un Sprint.|Haute|1|TODO|Sprint 3|
 |US#15|En tant que développeur, je souhaite visualiser la liste des tâches d'un Sprint.|Haute|2|TODO|Sprint 3|

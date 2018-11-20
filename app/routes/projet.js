@@ -3,8 +3,6 @@ const router = express.Router();
 const logger = require('morgan');
 let dbUtils = require('../models/projet.js');
 
-
-
 /* GET home page. */
 router.get('/liste', async function(req, res, next) {
   let projectList = await dbUtils.getProjects();
