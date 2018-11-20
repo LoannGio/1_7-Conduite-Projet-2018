@@ -1,22 +1,24 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('morgan');
-const dbUtils = require('../models/user.js');
+const dbUtils = require('../models/login.js');
+const root = require('../app.js')
 
 /* GET login page. */
 router.get('/', function(req, res, next) {
-  res.render('authentication/login', { title: 'Login Page' });
+  res.render('login', { title: 'Login Page' });
 });
 
-router.post('/', async function(req, res) {
+router.post('/', function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
   };
-  var isConnected = await dbUtils.connectUser(user);
-  if (isConnected) {
-    console.log('Welcome ' + user.email );
-    res.redirect(req.baseUrl + '/');
+  var res = dbUtils.canConnectUser(user);
+  if (res) {
+    root.session = req.session;
+    root.email = req.body.email;
+    res.redirect('/');
   }
   else {
     console.log('Connexion impossible pour, ' + user.email + '\nUtilisateur ou mot de passe incorrect');
@@ -24,8 +26,8 @@ router.post('/', async function(req, res) {
 });
 
 /* GET login page. */
-router.get('/creer', function(req, res, next) {
-  res.render('authentication/createAccount', { title: 'Create Account' });
+router.get('/create', function(req, res, next) {
+  res.render('createAccount', { title: 'Create Account' });
 });
 
 router.post('/creer', async function(req, res) {

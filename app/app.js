@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var projetRouter = require('./routes/projet');
 var loginRoutes = require('./routes/login');
 
+var session;
+
 var app = express();
 
 // view engine setup
