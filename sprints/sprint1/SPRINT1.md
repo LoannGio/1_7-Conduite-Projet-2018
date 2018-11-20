@@ -13,7 +13,7 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 |US#6|En tant que développeur, je souhaite me retirer d'un projet afin qu'il ne soit plus disponible dans la liste des projet auxquels je suis associés.|Moyenne|2|TODO|
 |US#8|En tant que développeur, dans un projet, je souhaite créer ou supprimer une User Story(__Id__, description, priorité, difficulté, User Stories dépendants, Planification) afin d'organiser le Backlog.|Haute|2|TODO|
 |US#9|En tant que développeur, dans un projet, je souhaite visualiser le Backlog (liste des User Story).|Haute|2|TODO|
-|US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO|
+|US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO||
 
 
 Lien vers la release : https://github.com/LoannGio/1_7-Conduite-Projet-2018/releases/tag/0.1.0
