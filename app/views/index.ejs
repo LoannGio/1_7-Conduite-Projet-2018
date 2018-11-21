@@ -2,11 +2,12 @@
 <html>
   <%- include('partials/head.ejs', {title: title}); %>
   <body>
-    <%- include('partials/navbar.ejs', {title: title}); %>
+    <%- include('partials/navbar.ejs', {title: title, user: user}); %>
 
        <!-- Begin page content -->
        <main role="main" class="container">
          <h1 class="mt-5">Welcome to our manager!</h1>
+         <% if (user) { %> <p>Your are connected as <%= user %><p> <% } %>
          <p><a class="btn btn-primary" href="/projet/creer" role="button">New Project</a></p>
        </main>
 

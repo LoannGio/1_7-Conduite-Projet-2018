@@ -6,18 +6,18 @@ const root = require('../app.js')
 
 /* GET login page. */
 router.get('/', function(req, res, next) {
-  res.render('login', { title: 'Login Page' });
+  root.ssn = req.session;
+  res.render('login', { title: 'Login Page', user: root.ssn.email });
 });
 
-router.post('/', function(req, res) {
+router.post('/', async function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
   };
-  var res = dbUtils.canConnectUser(user);
-  if (res) {
-    root.session = req.session;
-    root.email = req.body.email;
+  if (await dbUtils.existUser(user)) {
+    root.ssn = req.session;
+    root.ssn.email  = req.body.email;
     res.redirect('/');
   }
   else {
@@ -25,20 +25,30 @@ router.post('/', function(req, res) {
   }
 });
 
-/* GET login page. */
-router.get('/create', function(req, res, next) {
-  res.render('createAccount', { title: 'Create Account' });
+router.get('/logout', function(req,res){
+  req.session.destroy(function(err) {
+    if(err) {
+      console.log(err);
+    } else {
+      res.redirect('/');
+    }
+  });
 });
 
-router.post('/creer', async function(req, res) {
+/* GET login page. */
+router.get('/create', function(req, res, next) {
+  root.ssn = req.session;
+  res.render('createAccount', { title: 'Create Account', user: root.ssn.email });
+});
+
+router.post('/create', async function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
     name: req.body.name,
   };
-  let isCreated = await dbUtils.createUser(user);
-  if (isCreated) {
-    console.log('Welcome ' + user.email );
+  if (await dbUtils.createUser(user)) {
+    res.redirect('/');
   }
   else {
     console.log("L'email: " + user.email + " est déjà associé à un utilisateur" );

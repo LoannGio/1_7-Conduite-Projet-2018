@@ -3,15 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 //Liste des routes de l'app
 var indexRouter = require('./routes/index');
 var projetRouter = require('./routes/projet');
 var loginRoutes = require('./routes/login');
 
-var session;
+
 
 var app = express();
+
+app.use(session({secret:'XASDASDA'}));
+var ssn;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

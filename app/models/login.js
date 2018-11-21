@@ -1,7 +1,8 @@
 const DBinfos = require('../helpers/database.js');
 const logger = require('morgan');
 
-async function existUser(user) {
+
+async function findUser(user) {
   let client = await DBinfos.MongoClient.connect(DBinfos.DBurl, {
       useNewUrlParser: true
   });
@@ -15,16 +16,16 @@ async function existUser(user) {
   return res;
 }
 
-exports.canConnectUser = async function(user) {
-  let res = await existUser(user);
+exports.existUser = async function(user) {
+  var res = await findUser(user);
   return res;
-}
+};
 
 exports.createUser = async function(user) {
   let userIdentity = {
     email: user.email,
   };
-  var res = await existUser(userIdentity);
+  var res = await findUser(userIdentity);
   if (res) {
     return false;
   }
@@ -35,4 +36,4 @@ exports.createUser = async function(user) {
   await db.collection(DBinfos.usersCol).insertOne(user);
   client.close();
   return true;
-}
+};
