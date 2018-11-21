@@ -1,18 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('morgan');
-let dbUtils = require('../models/projet.js');
+const dbUtils = require('../models/projet.js');
 
 /* GET home page. */
 router.get('/liste', async function(req, res, next) {
-  root.ssn = req.session;
+  global.ssn = req.session;
   let projectList = await dbUtils.getProjects();
-  res.render('listeProjets', { title: 'Project List', projects:projectList, user: root.ssn.email });
+  res.render('listeProjets', { title: 'Project List', projects:projectList, user: global.ssn.email });
 });
 
 router.get('/creer', function(req, res, next) {
-  root.ssn = req.session;
-  res.render('creerProjet', { title: 'Create Project', user: root.ssn.email });
+  global.ssn = req.session;
+  res.render('creerProjet', { title: 'Create Project', user: global.ssn.email });
 });
 
 router.post('/creer', function(req, res, next) {
@@ -23,10 +23,10 @@ router.post('/creer', function(req, res, next) {
 });
 
 router.get('/edit/:id', async function(req, res, next){
-  root.ssn = req.session;
+  global.ssn = req.session;
   let uid = req.params.id;
   let project = await dbUtils.getProjectById(parseInt(uid));
-  res.render('modifierProjet', {title:'Editer projet : '+project.name, project:project, user: root.ssn.email });
+  res.render('modifierProjet', {title:'Editer projet : '+project.name, project:project, user: global.ssn.email });
 });
 
 router.put('/edit/:id', async function(req, res, next){

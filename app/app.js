@@ -9,7 +9,7 @@ var session = require('express-session');
 var indexRouter = require('./routes/index');
 var projetRouter = require('./routes/projet');
 var loginRoutes = require('./routes/login');
-
+var projectListRouter = require('./routes/projectList');
 
 
 var app = express();
@@ -31,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/projet', projetRouter);
 app.use('/login', loginRoutes);
+app.use('/project', projectListRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

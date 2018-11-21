@@ -2,12 +2,11 @@ const express = require('express');
 const router = express.Router();
 const logger = require('morgan');
 const dbUtils = require('../models/login.js');
-const root = require('../app.js')
 
 /* GET login page. */
 router.get('/', function(req, res, next) {
-  root.ssn = req.session;
-  res.render('login', { title: 'Login Page', user: root.ssn.email });
+  global.ssn = req.session;
+  res.render('login', { title: 'Login Page', user: global.ssn.email });
 });
 
 router.post('/', async function(req, res) {
@@ -16,8 +15,8 @@ router.post('/', async function(req, res) {
     password:  req.body.password,
   };
   if (await dbUtils.existUser(user)) {
-    root.ssn = req.session;
-    root.ssn.email  = req.body.email;
+    global.ssn = req.session;
+    global.ssn.email  = req.body.email;
     res.redirect('/');
   }
   else {
@@ -37,8 +36,8 @@ router.get('/logout', function(req,res){
 
 /* GET login page. */
 router.get('/create', function(req, res, next) {
-  root.ssn = req.session;
-  res.render('createAccount', { title: 'Create Account', user: root.ssn.email });
+  global.ssn = req.session;
+  res.render('createAccount', { title: 'Create Account', user: global.ssn.email });
 });
 
 router.post('/create', async function(req, res) {
