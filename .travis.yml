@@ -12,7 +12,7 @@ dist: trusty
 install:
   - cd app
   - npm install
-  - npm start
+  - npm start &
 
 script:
 - npm test
