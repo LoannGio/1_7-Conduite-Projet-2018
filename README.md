@@ -1,6 +1,8 @@
 # 1_7-Conduite-Projet-2018
 Projet de Conduite de projet 2018 (groupe 1_7)
 
+[![Build Status](https://travis-ci.org/LoannGio/1_7-Conduite-Projet-2018.svg?branch=master)](https://travis-ci.org/LoannGio/1_7-Conduite-Projet-2018)
+
 ## Product Backlog
 
 Dans ce tableau, en gras figurent les attributs __obligatoires__.

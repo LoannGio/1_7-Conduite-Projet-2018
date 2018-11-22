@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "testcafe firefox ./tests/tests.js"
+    "test": "testcafe chrome ./tests/tests.js"
   },
   "repository": {
     "type": "git",
