@@ -6,7 +6,7 @@ const dbUtils = require('../models/login.js');
 /* GET login page. */
 router.get('/login', function(req, res, next) {
   global.ssn = req.session;
-  res.render('login', { title: 'Login Page', user: global.ssn.email });
+  res.render('login', { title: 'Login Page', user: global.ssn.email, errorMsg: '' });
 });
 
 router.post('/login', async function(req, res) {
@@ -20,7 +20,7 @@ router.post('/login', async function(req, res) {
     res.redirect('/projects');
   }
   else {
-    console.log('Connexion impossible pour, ' + user.email + '\nUtilisateur ou mot de passe incorrect');
+    res.render('login', { title: 'Login Page', user: global.ssn.email, errorMsg: 'Login failed' });
   }
 });
 
@@ -34,10 +34,9 @@ router.get('/logout', function(req,res){
   });
 });
 
-/* GET login page. */
 router.get('/login/create', function(req, res, next) {
   global.ssn = req.session;
-  res.render('createAccount', { title: 'Create Account', user: global.ssn.email });
+  res.render('createAccount', { title: 'Create Account', user: global.ssn.email, errorMsg:'' });
 });
 
 router.post('/login/create', async function(req, res) {
@@ -50,7 +49,7 @@ router.post('/login/create', async function(req, res) {
     res.redirect('/');
   }
   else {
-    console.log("L'email: " + user.email + " est déjà associé à un utilisateur" );
+    res.render('createAccount', { title: 'Create Account', user: global.ssn.email, errorMsg:'Email '+user.email+' already exists' });
   }
 });
 
