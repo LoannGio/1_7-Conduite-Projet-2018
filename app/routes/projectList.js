@@ -5,7 +5,7 @@ const dbUtils = require('../models/projectList.js');
 
 
 /* GET home page. */
-router.get('/list', async function(req, res, next) {
+router.get('/projects', async function(req, res, next) {
   global.ssn = req.session;
   if (global.ssn.email) {
     let projectList = await dbUtils.getProjectsUser(global.ssn.email);
@@ -16,7 +16,7 @@ router.get('/list', async function(req, res, next) {
   }
 });
 
-router.get('/create', function(req, res, next) {
+router.get('/project/create', function(req, res, next) {
   global.ssn = req.session;
   if (global.ssn.email) {
     res.render('createProject', { title: 'Create Project', user: global.ssn.email });
@@ -26,13 +26,13 @@ router.get('/create', function(req, res, next) {
   }
 });
 
-router.post('/create', function(req, res, next) {
+router.post('/project/create', function(req, res, next) {
   global.ssn = req.session;
   if (global.ssn.email) {
     let project = {
       name: req.body.name,
       description: req.body.description,
-      sprintDur: req.body.sprintTime,
+      sprintDur: req.body.sprintDur,
       users: [global.ssn.email]
     }
     let uid = dbUtils.createProject(project);
