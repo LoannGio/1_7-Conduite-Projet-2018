@@ -1,9 +1,9 @@
 language: node_js
 node_js:
- - lts/*
+ - "10"
 
- notifications:
-  email: false
+notifications:
+ email: false
 
 sudo: required
 os: linux
@@ -12,7 +12,6 @@ dist: trusty
 install:
  - cd app
  - npm install
- - npm start &
 
 script:
-- npm test
+ - npm run travis
