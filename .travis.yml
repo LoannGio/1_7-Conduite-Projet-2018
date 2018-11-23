@@ -15,4 +15,5 @@ install:
  - npm start &
 
 script:
+ - npm run test-unit
  - npm run travis
