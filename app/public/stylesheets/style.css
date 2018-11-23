@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+#loggedAs{
+  padding: 8px 16px 8px 16px;
+  color: #FFFFFF;
+}

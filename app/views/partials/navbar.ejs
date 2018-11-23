@@ -21,7 +21,7 @@
 
          </ul>
          <form class="form-inline mt-2 mt-md-0">
-           <% if (user) { %> <a class="btn btn-outline-success my-2 my-sm-0" href="/logout" role="button">Logout</a> <% } %>
+           <% if (user) { %> <span id="loggedAs">Logged as <%= user %></span> <a class="btn btn-outline-success my-2 my-sm-0" href="/logout" role="button">Logout</a> <% } %>
            <% if (!user) { %> <a class="btn btn-outline-success my-2 my-sm-0" href="/login" role="button">Login</a> <% } %>
          </form>
        </div>

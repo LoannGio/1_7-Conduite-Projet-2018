@@ -8,5 +8,5 @@ test('Test login', async t => {
       .typeText('#inputEmail', 'toto@gmail.com')
       .typeText('#inputPassword', 'toto123456')
       .click('#submitLogin')
-      .expect(Selector('#userWelcome').innerText).eql('Your are connected as toto@gmail.com');
+      .expect(Selector('#loggedAs').innerText).eql('Logged as toto@gmail.com');
 });
