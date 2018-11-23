@@ -36,7 +36,7 @@ router.post('/project/create', function(req, res, next) {
       users: [global.ssn.email]
     }
     let uid = dbUtils.createProject(project);
-    res.redirect('/project/list');
+    res.redirect('/projects');
   }
   else {
     res.redirect('/login');
