@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include('partials/head.ejs', {title: title}); %>
+
+  <body>
+
+  <%- include('partials/navbar.ejs', {title: 'Project Manager', user: user}); %>
+
+   <main role="main" class="container">
+    <h1 class="mt-5"><%=  project.name %></h1>
+
+      <h3 class="mt-5">Description:</h3>
+        <p> <%= project.description %> </p>
+
+      <h3 class="mt-5">Sprint Duration:</h3>
+        <p> <%= project.sprintDur %> </p>
+
+      <h3 class="mt-5">Backlog:</h3>
+
+      <h3 class="mt-5">Sprints:</h3>
+
+      <a class="btn btn-outline-success my-2 my-sm-0" href="/project/byId/<%= project.uid %>/modify" role="button">Modify</a>
+
+  </main>
+
+  <% include partials/footer %>
+  <% include partials/scripts %>
+
+  </body>
+</html>

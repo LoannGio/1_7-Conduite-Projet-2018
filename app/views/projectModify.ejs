@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <%- include('partials/head.ejs', {title: title}); %>
+  <body>
+
+  <%- include('partials/navbar.ejs', {title: 'Project Manager', user: user}); %>
+
+   <main role="main" class="container">
+
+    <h1 class="mt-5"><%= title %></h1>
+
+    <form id="createForm" action="/project/byId/<%= project.uid %>/modify" method="post">
+
+      <p>Nom : <input id="projectName" class="form-control" type="text" name="name"  style="width:600px;" value="<%=project.name%>" required/></p>
+      <span>Description : <span/>
+      <textarea class="form-control" id="projectDescr" placeholder="Description" name="description" rows="3" style="width:600px;" ><%=project.description%></textarea>
+
+      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" class="form-control" type="number" min="1" name="sprintDur" style="width:70px;" value="<%=project.sprintDur%>" required/></p>
+      <input class="btn btn-primary" type="submit" name="submitter" value="Send">
+
+    </form>
+  </main>
+
+  <% include partials/footer %>
+  <% include partials/scripts %>
+
+  </body>
+</html>

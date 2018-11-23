@@ -21,9 +21,11 @@
 
         <% projects.forEach(function(projet) { %>
             <tr>
-            <th scope="row"><%= projet.uid%></th>
-            <th scope="row"><%= projet.name%></th>
-            <th scope="row"><%= projet.description%></th>
+            <a href="/project/byId/<%= projet.uid%>">
+            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.uid%> </a></th>
+            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.name%> </a></th>
+            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.description%> </a></th>
+            </a>
           </tr>
         <% }); %>
       </tbody>

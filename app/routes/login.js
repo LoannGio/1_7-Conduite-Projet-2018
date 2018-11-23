@@ -4,12 +4,12 @@ const logger = require('morgan');
 const dbUtils = require('../models/login.js');
 
 /* GET login page. */
-router.get('/', function(req, res, next) {
+router.get('/login', function(req, res, next) {
   global.ssn = req.session;
   res.render('login', { title: 'Login Page', user: global.ssn.email });
 });
 
-router.post('/', async function(req, res) {
+router.post('/login', async function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
@@ -17,7 +17,7 @@ router.post('/', async function(req, res) {
   if (await dbUtils.existUser(user)) {
     global.ssn = req.session;
     global.ssn.email  = req.body.email;
-    res.redirect('/');
+    res.redirect('/projects');
   }
   else {
     console.log('Connexion impossible pour, ' + user.email + '\nUtilisateur ou mot de passe incorrect');
@@ -35,12 +35,12 @@ router.get('/logout', function(req,res){
 });
 
 /* GET login page. */
-router.get('/create', function(req, res, next) {
+router.get('/login/create', function(req, res, next) {
   global.ssn = req.session;
   res.render('createAccount', { title: 'Create Account', user: global.ssn.email });
 });
 
-router.post('/create', async function(req, res) {
+router.post('/login/create', async function(req, res) {
   let user = {
     email: req.body.email,
     password:  req.body.password,
