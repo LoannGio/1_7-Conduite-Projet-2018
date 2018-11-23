@@ -27,7 +27,6 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 
 
 ## Suivi des résultats des tests du Sprint 2
-Lorsque vous exécutez un test, merci de remplir ce fichier. Si vous exécutez plusieurs fois un test, rajouter une ligne (il peut donc y avoir plusieurs lignes avec le même ID de test).
 
 ### Tests unitaires du module models
 
@@ -43,7 +42,7 @@ Lorsque vous exécutez un test, merci de remplir ce fichier. Si vous exécutez p
 |---|---|---|---|
 |US#1|T#2.30T|23/10/2018|Success|
 |US#4|T#2.31T|23/10/2018|Success|
-|US#8|T#2.32T|23/10/2018|Success|
+|US#8|T#2.32T|-|-|
 |US#9|T#2.33T|-|-|
 |US#11|T#2.34T|-|-|
 |US#12|T#2.35T|-|-||

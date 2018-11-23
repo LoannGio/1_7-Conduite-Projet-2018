@@ -36,12 +36,15 @@ En gras les attributs obligatoires.
 * releaseURL : lien vers la release du sprint
 * UserStoriesLinked : User Stories traîtées dans le sprint
 
-### Tâche
-
 ### T#2.4D - Routes
-* /projet/creer : créer un projet
-* /projet/liste : lister les projets
-* /projet/edit/{id} : modifier un projet
-* /login/creer : inscription
-* /login : connexion
 * / : accueil
+* /login : connexion
+* /login/create : inscription
+* /projects : lister les projets de l'utilisateur
+* /project/create : créer un projet
+* /projet/byId/:id : affiche le projet correspondant à l'id
+* /projet/byId/:id/modify : modifier un projet correspondant à l'id
+* /projet/byId/:id/createUs : ajouter une User Story
+* /projet/byId/:project_id/modifyUs/:us_id : modifier une User Story
+* /projet/byId/:project_id/sprint/:sprint_id : affiche le sprint correspondant
+* /projet/byId/:project_id/sprint/:sprint_id/modify : modifier le sprint
