@@ -17,7 +17,7 @@ router.post('/login', async function(req, res) {
   if (await dbUtils.existUser(user)) {
     global.ssn = req.session;
     global.ssn.email  = req.body.email;
-    res.redirect('/');
+    res.redirect('/projects');
   }
   else {
     console.log('Connexion impossible pour, ' + user.email + '\nUtilisateur ou mot de passe incorrect');

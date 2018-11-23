@@ -11,11 +11,11 @@
 
     <form id="createForm" action="/project/byId/<%= project.uid %>/modify" method="post">
 
-      <p>Nom : <input id="projectName" class="form-control" type="text" name="projectName"  style="width:600px;" value="<%=project.name%>" required/></p>
+      <p>Nom : <input id="projectName" class="form-control" type="text" name="name"  style="width:600px;" value="<%=project.name%>" required/></p>
       <span>Description : <span/>
-      <textarea class="form-control" id="projectDescr" placeholder="Description" name="projectDescr" rows="3" style="width:600px;" ><%=project.description%></textarea>
+      <textarea class="form-control" id="projectDescr" placeholder="Description" name="description" rows="3" style="width:600px;" ><%=project.description%></textarea>
 
-      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" class="form-control" type="number" min="1" name="projectSprintDur" style="width:70px;" value="<%=project.sprintDur%>" required/></p>
+      <p>Durée d'un sprint (jours) : <input id="projectSprintDur" class="form-control" type="number" min="1" name="sprintDur" style="width:70px;" value="<%=project.sprintDur%>" required/></p>
       <input class="btn btn-primary" type="submit" name="submitter" value="Send">
 
     </form>

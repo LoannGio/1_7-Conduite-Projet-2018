@@ -25,16 +25,17 @@ router.get('/project/byId/:id/modify', async function(req, res, next){
   }
 });
 
-router.put('/project/byId/:id/modify', async function(req, res, next){
+router.post('/project/byId/:id/modify', async function(req, res, next){
   global.ssn = req.session;
   if (global.ssn.email) {
     let project = {
       uid: req.params.id,
-      name: project.name,
-      description: project.description,
-      sprintDur: project.sprintDur,
+      name: req.body.name,
+      description: req.body.description,
+      sprintDur: req.body.sprintDur,
     }
     await dbUtils.updateProject(project);
+    res.redirect('/project/byId/' + project.uid);
   }
   else {
     res.redirect('/login');
