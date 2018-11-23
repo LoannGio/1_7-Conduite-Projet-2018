@@ -30,14 +30,14 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 Lorsque vous exécutez un test, merci de remplir ce fichier. Si vous exécutez plusieurs fois un test, rajouter une ligne (il peut donc y avoir plusieurs lignes avec le même ID de test).
 
 
-|ID|Date d'exécution|Résultat|
-|---|---|---|
-|T#2.21T|||
-|T#2.22T|||
-|T#2.23T|||
-|T#2.30T|||
-|T#2.31T|||
-|T#2.32T|||
-|T#2.33T|||
-|T#2.34T|||
-|T#2.35T||||
+|US|ID|Date d'exécution|Résultat|
+|---|---|---|---|
+|US#1|T#2.21T|||
+|US#4, US#8, US#9|T#2.22T|||
+|US#11, US#12|T#2.23T|||
+|US#1|T#2.30T|23/10/2018|Success|
+|US#4|T#2.31T|23/10/2018|Success|
+|US#8|T#2.32T|23/10/2018|Success|
+|US#9|T#2.33T|||
+|US#11|T#2.34T|||
+|US#12|T#2.35T||||
