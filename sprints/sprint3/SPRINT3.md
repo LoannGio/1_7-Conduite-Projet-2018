@@ -3,7 +3,7 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 
 ## Backlog du Sprint 3
 |ID|User Story|Priorité|Difficulté|Etat|
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 |US#6|En tant que développeur, je souhaite me retirer d'un projet afin qu'il ne soit plus disponible dans la liste des projet auxquels je suis associés.|Moyenne|2|TODO|
 |US#7|En tant que développeur, je souhaite inviter ou révoquer un ou plusieurs développeurs à un projet afin de leur permettre de participer ou non à la gestion de ce projet.|Moyenne|3|TODO|
 |US#10|En tant que développeur, dans un projet, je souhaite modifier une User Story(description, priorité, difficulté, US dépendantes, état, planification) afin de la mettre à jour.|Haute|3|TODO|
