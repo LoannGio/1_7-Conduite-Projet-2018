@@ -4,15 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-<<<<<<< HEAD
-    "test": "testcafe chrome ./tests/tests.js",
-    "travis": "testcafe \"saucelabs:Chrome@beta:Windows 10\" ./tests/tests.js",
-    "test-headless": "testcafe chrome:headless ./tests/tests.js"
-=======
     "test-unit": "nyc --reporter=text mocha ./tests/test-mocha.js",
     "test-e2e": "testcafe chrome ./tests/tests.js",
     "travis": "testcafe \"saucelabs:Chrome@beta:Windows 10\" ./tests/tests.js"
->>>>>>> e8ea1b8a27178b84ccff9cf4933d9da45b691363
   },
   "repository": {
     "type": "git",
