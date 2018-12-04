@@ -3,6 +3,11 @@ Projet de Conduite de projet 2018 (groupe 1_7)
 
 [![Build Status](https://travis-ci.org/LoannGio/1_7-Conduite-Projet-2018.svg?branch=master)](https://travis-ci.org/LoannGio/1_7-Conduite-Projet-2018)
 
+[![Build Status](https://sonarcloud.io/api/project_badges/measure?project=LoannGio_1_7-Conduite-Projet-2018&metric=alert_status)](https://sonarcloud.io/dashboard?id=LoannGio_1_7-Conduite-Projet-2018)
+
+[![Build Status](https://sonarcloud.io/api/project_badges/measure?project=LoannGio_1_7-Conduite-Projet-2018&metric=code_smells)](https://sonarcloud.io/dashboard?id=LoannGio_1_7-Conduite-Projet-2018)
+
+[![Build Status](https://sonarcloud.io/api/project_badges/measure?project=LoannGio_1_7-Conduite-Projet-2018&metric=sqale_index)](https://sonarcloud.io/dashboard?id=LoannGio_1_7-Conduite-Projet-2018)
 ## Product Backlog
 
 Dans ce tableau, en gras figurent les attributs __obligatoires__.
