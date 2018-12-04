@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "testcafe chrome ./tests/tests.js",
-    "travis": "testcafe \"saucelabs:Chrome@beta:Windows 10\" ./tests/tests.js"
+    "travis": "testcafe \"saucelabs:Chrome@beta:Windows 10\" ./tests/tests.js",
+    "test-headless": "testcafe chrome:headless ./tests/tests.js"
   },
   "repository": {
     "type": "git",
