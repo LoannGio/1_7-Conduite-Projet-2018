@@ -9,11 +9,16 @@ sudo: required
 os: linux
 dist: trusty
 
-install:
+addons:
+  sonarcloud:
+    organization: "loanngio-github"
+
+install: true
+
+script:
+ - sonar-scanner -Dsonar.login=${SONAR_TOKEN}
  - cd app
  - npm install
  - npm start &
-
-script:
  - npm run test-unit
  - npm run travis
