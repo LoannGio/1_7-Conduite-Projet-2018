@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('morgan');
-const dbUtils = require('../models/projectList.js');
+const dbUtils = require('../models/project.js');
 
 
 /* GET home page. */
