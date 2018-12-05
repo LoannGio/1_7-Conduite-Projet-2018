@@ -26,7 +26,7 @@ router.get('/project/create', function(req, res, next) {
   }
 });
 
-router.post('/project/create', function(req, res, next) {
+router.post('/project/create', async function(req, res, next) {
   global.ssn = req.session;
   if (global.ssn.email) {
     let project = {
@@ -35,7 +35,7 @@ router.post('/project/create', function(req, res, next) {
       sprintDur: req.body.sprintDur,
       users: [global.ssn.email]
     }
-    dbUtils.createProject(project);
+    await dbUtils.createProject(project);
     res.redirect('/projects');
   }
   else {

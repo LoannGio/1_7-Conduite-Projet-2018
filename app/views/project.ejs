@@ -8,19 +8,37 @@
   <%- include('partials/navbar.ejs', {title: 'Project Manager', user: user}); %>
 
    <main role="main" class="container">
-    <h1 class="mt-5"><%=  project.name %></h1>
+      <div class="row justify-content-md-center">
+        <h1 class="mt-5"><%=  project.name %></h1>
+      </div>
 
-      <h3 class="mt-5">Description:</h3>
+      <div class="row">
+        <h3 class="mt-5">Description:</h3>
+      </div>
+
+      <div class="row shadow p-3 bg-light roundeds">
         <p> <%= project.description %> </p>
+      </div>
 
-      <h3 class="mt-5">Sprint Duration:</h3>
+      <div class="row">
+        <h3 class="mt-5">Sprint Duration:</h3>
+      </div>
+
+      <div class="row p-3">
         <p> <%= project.sprintDur %> </p>
+      </div>
 
-      <h3 class="mt-5">Backlog:</h3>
+      <div class="row">
+        <h3 class="mt-5">Backlog:</h3>
+      </div>
 
-      <h3 class="mt-5">Sprints:</h3>
+      <div class="row">
+        <h3 class="mt-5">Sprints:</h3>
+      </div>
 
-      <a class="btn btn-outline-success my-2 my-sm-0" href="/project/byId/<%= project.uid %>/modify" role="button">Modify</a>
+      <div class="row">
+        <a class="btn btn-outline-success my-2 my-sm-0" href="/project/byId/<%= project.uid %>/modify" role="button">Modify</a>
+      </div>
 
   </main>
 

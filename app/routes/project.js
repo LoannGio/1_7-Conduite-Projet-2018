@@ -42,4 +42,15 @@ router.post('/project/byId/:id/modify', async function(req, res, next){
   }
 });
 
+router.get('/project/byId/:id/delete', async function(req, res, next){
+  global.ssn = req.session;
+  if (global.ssn.email) {
+    await dbUtils.deleteProjectById(req.params.id);
+    res.redirect('/projects');
+  }
+  else {
+    res.redirect('/login');
+  }
+});
+
 module.exports = router;
