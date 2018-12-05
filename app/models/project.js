@@ -47,7 +47,7 @@ exports.getProjectById = async function(id) {
       useNewUrlParser: true
   });
   const db = client.db(DBinfos.BDname);
-  const filter = { uid: id};
+  const filter = { uid: parseInt(id) };
   const project = await db.collection(DBinfos.projectsCol).findOne(filter);
   client.close();
   return project;

@@ -9,7 +9,7 @@ router.get('/projects', async function(req, res, next) {
   global.ssn = req.session;
   if (global.ssn.email) {
     let projectList = await dbUtils.getProjectsUser(global.ssn.email);
-    res.render('projectList', { title: 'Project List', projects:projectList, user: root.ssn.email });
+    res.render('projectList', { title: 'Project List', projects:projectList, user: global.ssn.email });
   }
   else {
     res.redirect('/login');

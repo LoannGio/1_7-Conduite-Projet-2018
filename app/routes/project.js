@@ -6,7 +6,7 @@ const dbUtils = require('../models/project.js');
 router.get('/project/byId/:id', async function(req, res, next){
   global.ssn = req.session;
   if (global.ssn.email) {
-    let project = await dbUtils.getProject(req.params.id);
+    let project = await dbUtils.getProjectById(req.params.id);
     res.render('project', {title: project.name, project:project, user: global.ssn.email });
   }
   else {
@@ -17,7 +17,7 @@ router.get('/project/byId/:id', async function(req, res, next){
 router.get('/project/byId/:id/modify', async function(req, res, next){
   global.ssn = req.session;
   if (global.ssn.email) {
-    let project = await dbUtils.getProject(req.params.id);
+    let project = await dbUtils.getProjectById(req.params.id);
     res.render('projectModify', {title:'Edit project : '+ project.name, project:project, user: global.ssn.email });
   }
   else {
@@ -34,7 +34,7 @@ router.post('/project/byId/:id/modify', async function(req, res, next){
       description: req.body.description,
       sprintDur: req.body.sprintDur,
     }
-    await dbUtils.updateProject(project);
+    await dbUtils.updateProjectById(project);
     res.redirect('/project/byId/' + project.uid);
   }
   else {
