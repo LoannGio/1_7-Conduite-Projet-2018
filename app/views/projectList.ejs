@@ -12,7 +12,6 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">#id</th>
           <th scope="col">Project</th>
           <th scope="col">Description</th>
         </tr>
@@ -22,9 +21,8 @@
         <% projects.forEach(function(projet) { %>
             <tr>
             <a href="/project/byId/<%= projet.uid%>">
-            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.uid%> </a></th>
             <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.name%> </a></th>
-            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.description%> </a></th>
+            <th scope="row"><a href="/project/byId/<%= projet.uid%>"> <%= projet.description.substr(0, 100);%> ... </a></th>
             </a>
           </tr>
         <% }); %>
